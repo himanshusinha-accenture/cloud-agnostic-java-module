@@ -1,45 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.accenture</groupId>
-  <artifactId>cloud-agnostic-java-module-java8</artifactId>
-  <version>0.0.1</version>
-  	<properties>
+  <groupId>io.github.himanshusinha-accenture</groupId>
+  <artifactId>cloud-agnostic-module</artifactId>
+  <version>1.0.0</version>
+    <properties>
 		<java.version>8</java.version>
 		<maven.compiler.release>8</maven.compiler.release>
 	</properties>
-<!-- 	<distributionManagement>
-	    <repository>
-        	<id>codeartifact</id>
-          	<name>codeartifact</name>
-       		 <url>https://mvn-pvt-repo-516376449562.d.codeartifact.ap-south-1.amazonaws.com/maven/maven-central-store/</url>
-       </repository>	
 	
-
-	   <repository>
-	      <id>artifact-registry</id>
-	      <url>https://asia-maven.pkg.dev/acn-hybridcloudapplications/mvn-repo-functions</url>
-	    </repository> 
-  	</distributionManagement>	-->
-  
-
-  <repositories>
-<!--   <repository>
-      <id>artifact-registry</id>
-      <url>https://asia-maven.pkg.dev/acn-hybridcloudapplications/mvn-repo-functions</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository> 
-    
-        <repository>
-            <id>codeartifact</id>
-            <name>codeartifact</name>
-            <url>https://mvn-pvt-repo-516376449562.d.codeartifact.ap-south-1.amazonaws.com/maven/maven-central-store/</url>
-        </repository>-->  
-  </repositories>
 	<build>
 
 		<pluginManagement>
@@ -52,7 +20,8 @@
 			</plugins>
 		</pluginManagement>
 	</build> 
-	<dependencies>
+	
+		<dependencies>
 	<!--GCP Maven Dependencies -->
 	<dependency>
 	    <groupId>com.google.cloud</groupId>
@@ -69,5 +38,4 @@
 	</dependency>
 
 	</dependencies>
-
 </project>
