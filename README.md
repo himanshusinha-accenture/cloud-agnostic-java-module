@@ -1,1 +1,1 @@
-# cloud-agnostic-java-module for Demo purposes
+# cloud-agnostic-java-module for demo purposes
