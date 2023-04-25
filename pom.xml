@@ -3,6 +3,28 @@
   <groupId>io.github.himanshusinha-accenture</groupId>
   <artifactId>cloud-agnostic-module</artifactId>
   <version>1.0.0</version>
+  
+   <name>Cloud Agnostic Java library </name>
+    <description>cloud Agnostic Java library for demo to Maven Central with OSSRH</description>
+   <url>https://github.com/himanshusinha-accenture/cloud-agnostic-module</url>
+
+	<licenses>
+	  <license>
+	    <name>The Apache License, Version 2.0</name>
+	    <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+	  </license>
+	</licenses>
+
+ <developers>
+    <developer>
+      <name>Himanshu Sinha</name>
+      <email>himanshu.kumar.sinha@accenture.com</email>
+      <organization>Accenture</organization>
+      <organizationUrl>http://www.accenture.com</organizationUrl>
+    </developer>
+  </developers>
+
+
     <properties>
 		<java.version>8</java.version>
 		<maven.compiler.release>8</maven.compiler.release>
@@ -31,7 +53,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
+                <version>1.6.8</version>
                 <extensions>true</extensions>
 			      <configuration>
 			        <serverId>ossrh</serverId>
@@ -76,6 +98,12 @@
                         <goals>
                             <goal>sign</goal>
                         </goals>
+                        <configuration>
+                           <gpgArguments>
+                                    <arg>--pinentry-mode</arg>
+                                    <arg>loopback</arg>
+                            </gpgArguments>
+                        </configuration>                        
                     </execution>
                 </executions>
             </plugin>
@@ -84,11 +112,11 @@
 
 	</build> 
 	
-	<!-- <scm>
+	 <scm>
 	    <connection>scm:git:git://github.com/himanshusinha-accenture/cloud-agnostic-module.git</connection>
         <developerConnection>scm:git:ssh://github.com/himanshusinha-accenture/cloud-agnostic-module.git</developerConnection>
         <url>http://github.com/himanshusinha-accenture/cloud-agnostic-module/tree/master</url>
-	</scm> -->
+	</scm>
 	<dependencies>
 	<!--GCP Maven Dependencies -->
 	<dependency>
