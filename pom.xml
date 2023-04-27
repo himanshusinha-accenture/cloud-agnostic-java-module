@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.himanshusinha-accenture</groupId>
   <artifactId>cloud-agnostic-module</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   
    <name>Cloud Agnostic Java library </name>
     <description>cloud Agnostic Java library for demo to Maven Central with OSSRH</description>
